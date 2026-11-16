@@ -1,0 +1,10 @@
+{
+  "name": "Fluent by Fall",
+  "short_name": "Fluent",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f6f2",
+  "theme_color": "#0b6e4f",
+  "icons": [{ "src": "icon.png", "sizes": "180x180", "type": "image/png" }]
+}
