@@ -1,0 +1,15 @@
+{
+ "format": "fbf-vault",
+ "version": 1,
+ "kdf": {
+  "name": "PBKDF2",
+  "hash": "SHA-256",
+  "iterations": 1000000,
+  "salt": "uLlV3w/Rg00EjNhVvu/IwA=="
+ },
+ "cipher": {
+  "name": "AES-GCM",
+  "iv": "14cXQ5dM8y6N0HAJ"
+ },
+ "data": "aIUDxm+5vx97vhfxsDfMTIrtq6fmN8uxPTVoDdCx4k5StIIdofrcmiJBAMSD1b7DhqJ19FZEOYpc0V3es0vGfHNANUcQZeAu2t+HoHXcCive2ySDjYx/ZjgohQwySXu5CryEdrCsa9evtk6oSZZDiPLrVe0pU63nG901ICQdubqpRS4nW5DMozfp5BKLCQDG1GEQhfjY2P/o8PnHG5eJMs/Py8cN05u1Q9eghZUDqypT6ayi9J1hL1a1ZuYKyK0="
+}
