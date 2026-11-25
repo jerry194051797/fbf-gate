@@ -137,12 +137,14 @@
   const REVIEW_KEY = "fbf:review:v1";
   const EXAM_KEY = "fbf:exam:v1";
   const PREFS_KEY = "fbf:prefs:v1";
+  const TODAY_KEY = "fbf:today:v1";
 
-  /** Merge functions by key, given the review and exam modules (either may be missing). */
-  function mergers(review, exam) {
+  /** Merge functions by key, given the review, exam and plan modules (any may be missing). */
+  function mergers(review, exam, plan) {
     const out = {};
     if (review) out[REVIEW_KEY] = (a, b) => review.mergeStates(review.cleanState(a), review.cleanState(b));
     if (exam) out[EXAM_KEY] = (a, b) => exam.mergeStates(exam.cleanState(a), exam.cleanState(b));
+    if (plan) out[TODAY_KEY] = (a, b) => plan.mergeToday(a, b);
     return out;
   }
 
@@ -223,6 +225,7 @@
     API: API,
     REVIEW_KEY: REVIEW_KEY,
     EXAM_KEY: EXAM_KEY,
+    TODAY_KEY: TODAY_KEY,
     utf8: utf8,
     fromUtf8: fromUtf8,
     toBase64: toBase64,
